@@ -1,0 +1,126 @@
+body{
+    overflow-x: hidden;
+    background:Black;
+}
+.parent{
+  margin-top: 20px;
+}
+.container-1{
+  margin-left: 5%;
+}  
+.container {
+    display: flex;
+    height: 85vh;
+    margin: 20px;
+    margin-top: 160px;
+    /* box-shadow: -3px -3px 25px 2px rgb(5, 247, 146), 3px 3px 25px 5px rgb(102, 31, 235);   */
+}
+.accordion {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.accordion:hover {
+    flex-basis: 65vw;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 150px;
+  }
+  .accordion:hover .overlay {
+    opacity: 1;
+  }
+  .wave {
+    float: left;
+    margin: 20px;
+    animation: wave  ease-in-out 0.5s infinite alternate;
+    transform-origin: center -20px;
+    margin-left: 85px;
+    margin-right: 75px;
+  }
+  
+  .wave:hover {
+    animation-play-state: paused;
+  }
+  
+  .wave img {
+    border: 5px solid #f8f8f8;
+    display: block;
+    width: 200px;
+    height: 300px;
+  }
+  
+  .wave figcaption {
+    text-align: center;
+  }
+  
+  .wave:after{
+    content: '';
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    border: 1.5px solid #ffffff;
+    top: -10px; 
+    left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+  }
+         
+  .wave:before{
+    content: '';
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    display: block;
+    height: 44px;
+    width: 47px;
+    background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    z-index: 16;
+  }
+          
+  @keyframes wave {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+  }
+  .center{
+    display: flex;
+    align-items:center ;
+  }
+.head2{
+    color:#1EAE98;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 
+    1px 0px 1px #ccc, 0px 1px 1px #eee, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc, 3px 4px 1px #eee,
+    5px 4px 1px #ccc, 4px 5px 1px #eee,
+    6px 5px 1px #ccc, 5px 6px 1px #eee,
+    7px 6px 1px #ccc;
+    font-family: cursive;
+    
+}  
+figcaption{
+    color: white;
+    font-size: 20px;
+}
+  
